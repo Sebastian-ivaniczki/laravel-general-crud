@@ -40,9 +40,9 @@ class ExamController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Exam $exam)
     {
-        //
+        return view('exams.show', compact('exam'));
     }
 
     /**
