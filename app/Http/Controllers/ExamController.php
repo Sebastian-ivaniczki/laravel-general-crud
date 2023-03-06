@@ -34,7 +34,7 @@ class ExamController extends Controller
         $exam = new Exam();
         $exam->fill($data);
         $exam->save();
-        return to_route('exams.index')
+        return to_route('exams.index');
     }
 
     /**
