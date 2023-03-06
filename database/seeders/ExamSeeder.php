@@ -18,8 +18,8 @@ class ExamSeeder extends Seeder
             $exam = new Exam();
             $exam->surname = $faker->word();
             $exam->name = $faker->word();
-            $exam->fiscal_code = $faker->taxId();
-            $exam->date_of_birth = $faker->date('d_m_Y');
+            $exam->fiscal_code = $faker->creditCardNumber();
+            $exam->date_of_birth = $faker->date('d/m/Y');
             $exam->genre =  $faker->randomElement(['F', 'M', '#']);
             $exam->exam_type = $faker->sentence();
             $exam->blood_platelet = $faker->numberBetween(140, 440);
@@ -30,7 +30,7 @@ class ExamSeeder extends Seeder
             $exam->average_cell_content_hb = $faker->numberBetween(82, 98);
             $exam->average_cell_concentration = $faker->numberBetween(25, 34);
             $exam->gr = $faker->numberBetween(11, 14);
-            $exam->mean_plate_volume_concentration = $faker->numberBetween(7, 11);
+
             $exam->hypochromic_red_blood_cells = $faker->numberBetween(0, 11);
             $exam->sgpt = $faker->numberBetween(4, 41);
 

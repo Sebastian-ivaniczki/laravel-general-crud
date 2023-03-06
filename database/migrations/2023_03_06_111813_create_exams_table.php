@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('surname', 30);
             $table->string('name', 30);
             $table->string('fiscal_code', 50);
-            $table->date('date_of_birth');
+            $table->string('date_of_birth');
             $table->string('genre');
             $table->text('exam_type');
             $table->integer('blood_platelet')->unsigned();
@@ -27,7 +27,7 @@ return new class extends Migration
             $table->tinyInteger('average_cell_content_hb')->unsigned();
             $table->tinyInteger('average_cell_concentration')->unsigned();
             $table->tinyInteger('gr')->unsigned();
-            $table->tinyInteger('mean_plate_volume')->unsigned();
+            $table->tinyInteger('mean_plate_volume')->unsigned()->nullable();
             $table->tinyInteger('hypochromic_red_blood_cells')->unsigned();
             $table->tinyInteger('sgpt')->unsigned();
 
