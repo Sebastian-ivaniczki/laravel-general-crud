@@ -90,6 +90,9 @@
         </tr>
       </tbody>
     </table>
+    <div>
+      <div> <a href="{{route('exams.index')}}" class="btn btn-primary">Return</a></div>
+    </div>
   </div>
 
 
