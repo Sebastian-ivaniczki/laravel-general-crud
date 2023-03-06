@@ -100,7 +100,7 @@
           @csrf
           <button class="btn btn-danger me-3">Delete exam</button>
          </form>
-         <button class="btn btn-warning">Edit</button>
+         <a href="{{route('exams.edit', $exam->id)}}" class="btn btn-warning">Edit</a>
       </div>
 
     </div>

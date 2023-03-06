@@ -59,7 +59,13 @@ class ExamController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $data = $request->all();
+        $newExam = new Exam();
+
+        $newExam->fill($data);
+        $newExam->save();
+
+        return redirect()->route('exams.show', $newExam->id);
     }
 
     /**
