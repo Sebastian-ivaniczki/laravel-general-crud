@@ -2,9 +2,13 @@
 
 @section('content')
 <div class="container py-5">
-    <h1 class="text-center pb-5">
-        Exams Result
-    </h1>
+    <div class="d-flex flex-column align-items-center pb-5">
+        <h1 class="text-center pb-2">
+            Exams Result
+        </h1>
+        <div> <a href="{{route('exams.create')}}" class="btn btn-success">Add Exam</a></div>
+    </div>
+
     <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-xl-4">
         @foreach($exams as $exam)
         <div id="col" class="col">
