@@ -32,8 +32,13 @@
                 <div>
                     <p>Exam Type:</p> <strong>{{$exam->exam_type}}</strong>
                 </div>
-                <div id="btn" class="pt-3">
-                    <a href="{{route('exams.show', $exam->id)}}" class="btn btn-primary">More Info</a>
+                <div id="btn" class="pt-3 d-flex justify-content-center">
+                    <a href="{{route('exams.show', $exam->id)}}" class="btn btn-primary me-2">More Info</a>
+                    <form action="{{route('exams.destroy', $exam->id)}}" method="POST">
+                        @method('DELETE')
+                        @csrf
+                        <button class="btn btn-danger">Delete exam</button>
+                       </form>
                 </div>
             </div>
 
