@@ -91,7 +91,17 @@
       </tbody>
     </table>
     <div>
-      <div> <a href="{{route('exams.index')}}" class="btn btn-primary">Return</a></div>
+      {{-- Buttons  --}}
+
+      <div class="d-flex">
+         <a href="{{route('exams.index')}}" class="btn btn-primary me-3">Return</a>
+         <form action="{{route('exams.destroy', $exam->id)}}" method="POST">
+          @method('DELETE')
+          @csrf
+          <button class="btn btn-danger">Delete exam</button>
+         </form>
+      </div>
+
     </div>
   </div>
 
