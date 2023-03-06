@@ -30,6 +30,11 @@ class ExamController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $request->all();
+        $exam = new Exam();
+        $exam->fill($data);
+        $exam->save();
+        return to_route('exams.index')
     }
 
     /**
