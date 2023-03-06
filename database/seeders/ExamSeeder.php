@@ -30,7 +30,7 @@ class ExamSeeder extends Seeder
             $exam->average_cell_content_hb = $faker->numberBetween(82, 98);
             $exam->average_cell_concentration = $faker->numberBetween(25, 34);
             $exam->gr = $faker->numberBetween(11, 14);
-
+            $exam->mean_plate_volume = $faker->numberBetween(5, 24);
             $exam->hypochromic_red_blood_cells = $faker->numberBetween(0, 11);
             $exam->sgpt = $faker->numberBetween(4, 41);
 
