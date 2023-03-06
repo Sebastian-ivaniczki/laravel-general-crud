@@ -97,12 +97,59 @@
 
                 <div class="col-3">
                     <div class="mb-3">
-                        <label for="hematocrit" class="form-label">Hematocrit</label>
-                        <input type="number" class="form-control" id="hematocrit" name="hematocrit"
-                            value="{{ old('hematocrit') }}">
+                        <label for="average_cell_volume" class="form-label">Average cell volume</label>
+                        <input type="number" class="form-control" id="average_cell_volume" name="average_cell_volume"
+                            value="{{ old('average_cell_volume') }}">
                     </div>
                 </div>
 
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="average_cell_content_hb" class="form-label">Average cell content hb</label>
+                        <input type="number" class="form-control" id="average_cell_content_hb"
+                            name="average_cell_content_hb" value="{{ old('average_cell_content_hb') }}">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="average_cell_concentration" class="form-label">Average cell concentration</label>
+                        <input type="number" class="form-control" id="average_cell_concentration"
+                            name="average_cell_concentration" value="{{ old('average_cell_concentration') }}">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="gr" class="form-label">G.R.</label>
+                        <input type="number" class="form-control" id="gr" name="gr"
+                            value="{{ old('gr') }}">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="mean_plate_volume" class="form-label">Mean plate volume</label>
+                        <input type="number" class="form-control" id="mean_plate_volume" name="mean_plate_volume"
+                            value="{{ old('mean_plate_volume') }}">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="hypochromic_red_blood_cells" class="form-label">Hypochromic red blood cells</label>
+                        <input type="number" class="form-control" id="hypochromic_red_blood_cells"
+                            name="hypochromic_red_blood_cells" value="{{ old('hypochromic_red_blood_cells') }}">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="sgpt" class="form-label">SGPT</label>
+                        <input type="number" class="form-control" id="sgpt" name="sgpt"
+                            value="{{ old('sgpt') }}">
+                    </div>
+                </div>
             </div>
 
             <div class="d-flex justify-content-center">
