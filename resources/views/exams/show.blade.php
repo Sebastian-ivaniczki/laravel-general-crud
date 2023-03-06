@@ -87,7 +87,7 @@
               </tr>
               <tr>
                 <th scope="row">SGPT</th>
-                <td>{{$exam->U/L}}</td>
+                <td>{{$exam->sgpt}}</td>
                 <td>%</td>
                 <td>4-41</td>
               </tr>
