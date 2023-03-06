@@ -98,8 +98,9 @@
          <form action="{{route('exams.destroy', $exam->id)}}" method="POST">
           @method('DELETE')
           @csrf
-          <button class="btn btn-danger">Delete exam</button>
+          <button class="btn btn-danger me-3">Delete exam</button>
          </form>
+         <button class="btn btn-warning">Edit</button>
       </div>
 
     </div>
