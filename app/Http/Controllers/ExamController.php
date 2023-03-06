@@ -50,7 +50,8 @@ class ExamController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $exam = Exam::findOrFail($id);
+        return view('exams.edit', compact('exam'));
     }
 
     /**
