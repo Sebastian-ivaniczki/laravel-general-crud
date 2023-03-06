@@ -22,7 +22,7 @@ class ExamController extends Controller
      */
     public function create()
     {
-        //
+        return view('exams.create');
     }
 
     /**
@@ -30,15 +30,19 @@ class ExamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $exam = new Exam();
+        $exam->fill($data);
+        $exam->save();
+        return to_route('exams.index');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Exam $exam)
     {
-        //
+        return view('exams.show', compact('exam'));
     }
 
     /**
@@ -60,7 +64,10 @@ class ExamController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Exam $exam)
     {
+        $exam->delete();
+
+        return redirect()->route('exams.index');
     }
 }
