@@ -60,8 +60,10 @@ class ExamController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Exam $exam)
     {
-        //
+        $exam->delete();
+
+        return redirect()->route('exams.index');
     }
 }
