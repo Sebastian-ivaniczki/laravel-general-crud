@@ -12,8 +12,13 @@
 
     #text {
         position: absolute;
-        top: 50%;
+        top: 45%;
         bottom: 50%;
+
+        h1 {
+            font-size: 45px;
+            color: rgb(0, 0, 0);
+        }
     }
 
 }
